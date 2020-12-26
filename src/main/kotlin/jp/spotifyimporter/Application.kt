@@ -36,6 +36,6 @@ fun main(args: Array<String>) {
 	// runApplication<Application>(*args)
 
 	val builder = SpringApplicationBuilder(Application::class.java)
-	//builder.headless(false)
+	builder.headless(false)
 	builder.run(*args)
 }

@@ -23,8 +23,7 @@ class MigrationService(val context: ConfigurableApplicationContext, val songRead
 
             // Sort playlists in descending order so that they appear alphabetically on Spotify
             playlists.sortedByDescending { it.title }
-
-            playlists.forEach(::migratePlaylist)
+                .forEach(::migratePlaylist)
         }
     }
 
